@@ -192,9 +192,55 @@ img {
     margin: 0 1rem;
 }
 
+/*
+Tablets and under
+*/
+@media(max-width: 768px) {
+    .grid,
+    .showcase .grid,
+    .stats .grid,
+    .cli .grid,
+    .cloud .grid,
+    .footer .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
 
+    .showcase {
+        height: auto;
+    }
 
+    .showcase__text {
+        text-align: center;
+        margin-top: 4rem;
+    }
 
+    .showcase__form {
+        justify-self: center;
+        margin: auto;
+    }
+    .cli .grid > *:first-child {
+    grid-column: 1 ;
+    grid-row: 1 ;
+}
+}
+
+/*
+    Mobile
+*/
+@media(max-width: 500px) {
+    .navbar {
+        height: 11rem;
+        .flex {
+            flex-direction: column;
+            overflow: visible;
+        }
+        ul {
+            padding: 1rem;
+            background-color: rgba(0,0,0,0.1);
+        }
+    }
+}
 
 
 
