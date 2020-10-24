@@ -112,6 +112,10 @@ code, pre {
     }
 }
 
+.showcase__text {
+    animation: slideInFromLeft 1s ease-in;
+}
+
 .showcase__form {
     position: relative;
     top: 6rem;
@@ -120,6 +124,7 @@ code, pre {
     padding: 4rem;
     z-index: 100;
     justify-self: flex-end;
+    animation: slideInFromRight 1s ease-in;
     .form-control {
         margin: 3rem 0;
     }
@@ -141,6 +146,7 @@ code, pre {
 */
 .stats {
     padding-top: 10rem;
+    animation: slideInFromBottom 1s ease-in;
     & .grid h3 {
         font-size: 3.5rem;
     }
@@ -206,10 +212,15 @@ code, pre {
     FEATURES PAGE
 
 */
+.features__head div, 
+.features-sub__head div {
+    animation: slideInFromLeft 1s ease-in;
+}
 .features__head img,
 .docs__head img {
     width: 20rem;
     justify-self: flex-end;
+
 }
 
 .features-sub__head img {
@@ -218,6 +229,7 @@ code, pre {
 }
 
 .features__main {
+    animation: slideInFromLeft 1s ease-in;
     .card > i{
         margin-right: 2rem;
     }
@@ -237,7 +249,16 @@ code, pre {
     DOCS
 
 */
+.docs__head{
+    h1, p {
+        animation: slideInFromLeft 1.3s ease-in;
+    }
+    img{
+        animation: slideInFromTop 1s ease-in;
+    }
+}
 .docs__main {
+    animation: slideInFromLeft 1s ease-in;
     h3 {
         margin: 2rem 0;
     }
@@ -258,7 +279,48 @@ code, pre {
     }
 }
 
+/*
+    Animations
+*/
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
 
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
 
 /*
     Mobile
