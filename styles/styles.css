@@ -40,6 +40,9 @@ img {
   width: 100%;
 }
 
+/*
+    Navbar
+*/
 .navbar {
   background-color: #047aed;
   color: #fff;
@@ -68,6 +71,75 @@ img {
   border-bottom: 2px #fff solid;
 }
 
+/*
+    Showcase
+*/
+.showcase {
+  height: 40rem;
+  background-color: #047aed;
+  color: #fff;
+  position: relative;
+}
+
+.showcase h1 {
+  font-size: 4rem;
+}
+
+.showcase p {
+  margin: 2rem 0;
+}
+
+.showcase .grid {
+  overflow: visible;
+  -ms-grid-columns: 55% 45%;
+      grid-template-columns: 55% 45%;
+  gap: 3rem;
+}
+
+.showcase::before, .showcase::after {
+  content: "";
+  position: absolute;
+  height: 10rem;
+  bottom: -7rem;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  transform: skewY(-3deg);
+  -webkit-transform: skewY(-3deg);
+  -moz-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg);
+}
+
+.showcase__form {
+  position: relative;
+  top: 6rem;
+  height: 35rem;
+  width: 40rem;
+  padding: 4rem;
+  z-index: 100;
+  justify-self: flex-end;
+}
+
+.showcase__form .form__control {
+  margin: 3rem 0;
+}
+
+.showcase__form input[type='text'],
+.showcase__form input[type='email'] {
+  border: 0;
+  border-bottom: 1px solid #b4becb;
+  width: 100%;
+  padding: 3px;
+  font-size: 1.6rem;
+}
+
+.showcase__form input:focus {
+  outline: none;
+}
+
+/*
+    Utilities
+*/
 .container {
   max-width: 110rem;
   margin: 0 auto;
@@ -86,5 +158,52 @@ img {
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.card {
+  background-color: #fff;
+  color: #333;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  margin: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  background-color: #047aed;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.btn__outline {
+  background-color: transparent;
+  border: 1px #fff solid;
 }
 /*# sourceMappingURL=styles.css.map */
