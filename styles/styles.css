@@ -39,4 +39,52 @@ p {
 img {
   width: 100%;
 }
+
+.navbar {
+  background-color: #047aed;
+  color: #fff;
+  height: 7rem;
+}
+
+.navbar .flex {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 1rem;
+  margin: 0 0.5rem;
+}
+
+.navbar a:hover {
+  border-bottom: 2px #fff solid;
+}
+
+.container {
+  max-width: 110rem;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 4rem;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
 /*# sourceMappingURL=styles.css.map */

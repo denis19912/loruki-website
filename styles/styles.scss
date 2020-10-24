@@ -40,3 +40,37 @@ p {
 img {
     width: 100%;
 }
+
+.navbar {
+    background-color: #047aed;
+    color: #fff;
+    height: 7rem;
+    .flex {
+        justify-content: space-between;
+    }
+    ul {
+        display: flex;
+    }
+    a {
+        color: #fff;
+        padding: 1rem;
+        margin: 0 0.5rem;
+        &:hover {
+            border-bottom: 2px #fff solid;
+        }
+    }
+}
+
+.container {
+    max-width: 110rem;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 4rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
