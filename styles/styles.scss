@@ -166,6 +166,28 @@ img {
     grid-template-columns: 4fr 3fr;
 }
 
+/*
+    Languages
+*/
+.languages{
+    .card{
+        text-align: center;
+        margin: 1.8rem 1rem 4rem;
+        h4 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        &:hover {
+            transform: translateY(-1.5rem);
+            transition: transform 0.2s ease-in;
+        }
+    }
+    .flex {
+        flex-wrap: wrap;
+    }
+} 
+
+
 
 
 
