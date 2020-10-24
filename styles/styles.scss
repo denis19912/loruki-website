@@ -220,9 +220,19 @@ Tablets and under
         margin: auto;
     }
     .cli .grid > *:first-child {
-    grid-column: 1 ;
-    grid-row: 1 ;
+        grid-column: 1 ;
+        grid-row: 1 ;
+    }
 }
+
+/*
+
+    FEATURES PAGE
+
+*/
+.features__head img {
+    width: 20rem;
+    justify-self: flex-end;
 }
 
 /*
