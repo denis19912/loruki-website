@@ -2,7 +2,7 @@
 $primary__color: #047aed;
 
 * {
-    box-sizing: border-box;
+    box-sizing: border-box; 
     padding: 0;
     margin: 0;
 }
@@ -109,7 +109,7 @@ img {
     padding: 4rem;
     z-index: 100;
     justify-self: flex-end;
-    .form__control {
+    .form-control {
         margin: 3rem 0;
     }
     input[type='text'],
@@ -125,6 +125,24 @@ img {
     }
 }
 
+/*
+    Stats
+*/
+.stats {
+    padding-top: 10rem;
+    & .grid h3 {
+        font-size: 3.5rem;
+    }
+    & .grid p {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+}
+
+.stats__heading {
+    max-width: 50rem;
+    margin: 1rem auto 1rem auto;
+}
 
 
 
@@ -163,6 +181,10 @@ img {
     height: 100%;
 }
 
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
 .card {
     background-color: #fff;
     color: #333;
@@ -186,7 +208,40 @@ img {
     }
 }
 
-.btn__outline {
+.btn-outline {
     background-color: transparent;
     border: 1px #fff solid;
 }
+
+.text-center {
+    text-align: center;
+}
+
+/*
+    Margins
+*/
+.my-1 {margin: 1rem 0}
+.my-2 {margin: 1.5rem 0}
+.my-3 {margin: 2rem 0}
+.my-4 {margin: 3rem 0}
+.my-5 {margin: 4rem 0}
+/*All margins*/
+.m-1 {margin: 1rem }
+.m-2 {margin: 1.5rem }
+.m-3 {margin: 2rem }
+.m-4 {margin: 3rem }
+.m-5 {margin: 4rem }
+/*
+    Paddings
+*/
+.py-1 {padding: 1rem 0}
+.py-2 {padding: 1.5rem 0}
+.py-3 {padding: 2rem 0}
+.py-4 {padding: 3rem 0}
+.py-5 {padding: 4rem 0}
+/*All margins*/
+.p-1 {padding: 1rem }
+.p-2 {padding: 1.5rem }
+.p-3 {padding: 2rem }
+.p-4 {padding: 3rem }
+.p-5 {padding: 4rem }

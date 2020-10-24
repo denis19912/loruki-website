@@ -1,0 +1,58 @@
+@import "styles";
+/*
+    Utilities
+*/
+.container {
+    max-width: 110rem;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 4rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    background-color: #fff;
+    color: #333;
+    border-radius: 1rem;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    padding: 2rem;
+    margin: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    background-color: $primary__color;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    &:hover {
+        transform: scale(0.95);
+        transition-duration: 0.5s;
+    }
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px #fff solid;
+}
