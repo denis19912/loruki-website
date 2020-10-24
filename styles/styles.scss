@@ -235,6 +235,26 @@ Tablets and under
     justify-self: flex-end;
 }
 
+.features-sub__head img {
+    width: 30rem;
+    justify-self: flex-end;
+}
+
+.features__main {
+    .card > i{
+        margin-right: 2rem;
+    }
+    .grid {
+        padding: 3rem;
+        & > *:first-child {
+            grid-column: 1 / span 3;
+        }
+        & > *:nth-child(2) {
+            grid-column: 1 / span 2;
+        }
+    }
+}
+
 /*
     Mobile
 */
