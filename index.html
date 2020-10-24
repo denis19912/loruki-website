@@ -38,7 +38,11 @@
             </div>
             <div class="showcase__form card">
                 <h2>Request a Demo</h2>
-                <form>
+                <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                    <input type="hidden" name="form-name" value="contact">
+                    <p class="hidden">
+                        <label>Don't fill this out if you're human: <input type="bot-field" /></label>
+                    </p>
                     <div class="form-control">
                         <input type="text" name="name" placeholder="Name" required>
                     </div>
@@ -55,10 +59,11 @@
     </section>
     <!-- Showcase -->
     <!-- Stats -->
-    <section class="stats">
+    <section class=" stats">
         <div class="container">
             <h3 class="stats__heading text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui pariatur distinctio atque impedit, quia
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui pariatur distinctio atque
+                impedit, quia
                 sequi cumque.
             </h3>
 

@@ -665,6 +665,11 @@ alert-error {
   color: #f4f4f4;
 }
 
+.hidden {
+  visibility: hidden;
+  height: 0;
+}
+
 /*
     Margins
 */

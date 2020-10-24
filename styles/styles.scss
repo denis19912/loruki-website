@@ -556,6 +556,11 @@ alert-error {
     color: $light__color;
 }
 
+.hidden {
+    visibility: hidden;
+    height: 0;
+}
+
 
 /*
     Margins
